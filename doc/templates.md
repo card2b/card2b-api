@@ -24,7 +24,7 @@
 * **Object** *[объект шаблона](./working-with-api.md#template)* — полные сведения о шаблоне
 
 Пример ответа:
-```json
+```js
 {
   "template_id": 64,
   "pass_type": "storeCard",
@@ -74,7 +74,7 @@
 
 Ответ: 
 
-```json
+```js
 {
   "cards_issued": 569,
   "cards_installed": 301,
@@ -106,7 +106,7 @@
 * **cards_reissue_needed** - Влияние на выпущенные карточки. **true**, если изменение шаблона влияет на выпущенные карточки
 
 Пример ответа:
-```json
+```js
 {
   "template_id": 123,
   "changed": true,
@@ -136,7 +136,7 @@
 
 Пример ответа:
 
-```json
+```js
 {
   "template_id": 123,
   "changed": true,              // true, если есть (и была перевыпущена) хоть одна карточка 
@@ -168,7 +168,7 @@
 
 Пример ответа:
 
-```json
+```js
 {
   "template_id": 123,
   "changed": true,              // true, если уведомления были отправлены 
@@ -194,7 +194,7 @@
 
 Пример ответа:
 
-```json
+```js
 {
   "template_id": 123,
   "changed": true,              // true, если шаблон был активен, а стал заблокирован 
@@ -263,7 +263,7 @@ GET /api/template/123/stat?field=bonus&timeFrom=1509483600&timeTo=1519851600&ste
 <a name="api_template_get_vnum"></a>
 ## GET /api/template/{template_id}?v_num={v_num} — получить версию шаблона
 
-``` json
+``` shell
   [GET] /api/template/{template_id}?v_num={v_num}
 ```
 

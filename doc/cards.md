@@ -21,7 +21,7 @@
 
 Например:
 
-```json
+```js
 {
   "var_name": "new_value"
 }
@@ -35,7 +35,7 @@
 
 Пример ответа:
 
-```json
+```js
 {
   "card_id": 123,
   "url": "https://card2b.com/c/10148/ffbc60f02b1ae137"
@@ -58,7 +58,7 @@
 * [объект карточки](./working-with-api.md#card) — текущее состояние карточки, данные о количестве установок, список версий карты
 
 Пример ответа
-```json
+```js
 {
   "card_id": 10148,
   "url": "https://card2b.com/c/10148/ffbc60f02b1ae137",
@@ -108,7 +108,7 @@
 
 Пример ответа:
 
-```json
+```js
 {
   "card_id": 123,
   "changed": true
@@ -135,7 +135,7 @@
 
 Пример ответа:
 
-```json
+```js
 {
   "card_id": 123,
   "changed": true
@@ -162,7 +162,7 @@
 
 Пример ответа:
 
-```json
+```js
 {
   "card_id": 123,
   "changed": true
@@ -185,7 +185,7 @@
 
 Пример ответа:
 
-```json
+```js
 {
   "card_id": 123,
   "changed": true
@@ -233,7 +233,7 @@
 Пример: запросим, как менялся *bonus* у *123*-й карты с *28 февраля* по *11 марта* с шагом в *сутки*:
 
 ```shell
-GET /api/card/123/stat?field=bonus&timeFrom=1519765200&timeTo=1520715600&step=1440
+[GET] /api/card/123/stat?field=bonus&timeFrom=1519765200&timeTo=1520715600&step=1440
 ```  
 ### Параметры ответа
 
@@ -242,7 +242,7 @@ GET /api/card/123/stat?field=bonus&timeFrom=1519765200&timeTo=1520715600&step=14
 * **stepPoints** *array* — массив значений, которые принимал **field** на указанном отрезке времени;
 
 Пример ответа:
-```json
+```js
 {
   "card_id": 123,
   "field": "bonus",
